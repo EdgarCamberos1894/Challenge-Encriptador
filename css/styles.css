@@ -1,0 +1,194 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: #0b3058;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    flex: 1;
+}
+
+/* Estilos del contenido principal */
+.contenedor {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+
+
+.textarea {
+    outline: none;
+    width: calc(100% - 20px);
+    height: 52vh;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #ced4da;
+    border-radius: 10px;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    color: #454a81; 
+    font-size: 1.3em;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    background-color: #05213f;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 15px ;
+    cursor: pointer;
+    font-size: 18px;
+    width: calc(50% - 12px);
+}
+
+.btn:hover {
+    background-color: #5a6268;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+.btn-encriptar {
+    background-color: #170839;
+}
+
+.btn-desencriptar {
+    background-color: #6c757d;
+}
+
+.btn-copiar {
+    background-color: transparent;
+    color: #1b5ba0;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 3px;
+    right: 20px;
+}
+
+.btn-copiar i {
+    margin-right: 5px;
+}
+
+.grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo .item {
+    margin-bottom: 10px;
+}
+
+.contenedor h4 {
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.contenedor p {
+    text-align: center;
+    width: 90%;
+    margin-top: 0px;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #05213f;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content img {
+    margin-left: 10px;
+    max-width: 25px;
+    height: auto;
+}
+
+.footer-content a[href="https://www.linkedin.com/in/edgar-camberos-8a66052bb/"] {
+    margin-right: 30px;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+/* Media query para pantallas grandes */
+@media screen and (min-width: 768px) {
+    .grupo {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-gap: 20px;
+    }
+
+    .grupo .item {
+        margin-bottom: 0;
+    }
+
+    .contenedor {
+        max-width: 85%;
+    }
+}
